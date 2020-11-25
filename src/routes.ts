@@ -9,6 +9,6 @@ const upload = multer(uploadConfig);
 
 routes.get('/ongs', OngsController.index);
 routes.get('/ongs/:id', OngsController.show);
-routes.post('/ongs', upload.array('images'), OngsController.create);
+routes.post('/uploads', upload.array('images'), OngsController.create);
 
 export default routes;
